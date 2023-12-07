@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи - Главная</title>
@@ -7,279 +7,305 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="page__body">
-    <header class="page__header page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип «Cat Energy».">
-        </a>
-        <button class="page-header__toggle" aria-label="Открыть меню" type="button"></button>
+  <body class="body">
+    <header class="page-header">
+      <div class="page-header__container container">
+        <div class="page-header__menu">
+          <a class="page-header__logo logo" href="index.html" aria-current="page">
+            <img src="images/logo-mobile.svg" width="190" height="38" alt="Логотип «Cat Energy».">
+          </a>
+          <button class="page-header__toggle" aria-label="Открыть меню" type="button"></button>
+          <nav class="page-header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--current" href="catalog.html" aria-current="page">Каталог продукции</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="page-header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
-    <main class="page__main">
-      <h1 class="page__title page-title">Каталог продукции</h1>
+    <main class="main">
       <section class="catalog">
-        <h2 class="visually-hidden">Список продукции</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item product">
-            <a class="product__img-link" href="#">
-              <img class="product__img" src="images/chicken-500.png" width="140" height="107" alt="Баночка корма со вкусом курицы.">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
-            </a>
-            <ul class="product__specs">
-              <li class="product__specs-item">
-                <p class="product__specs-field">Масса</p>
-                <p class="product__specs-value">500 г</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Вкус</p>
-                <p class="product__specs-value">Курица</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Цена</p>
-                <p class="product__specs-value">700 ₽</p>
-              </li>
-            </ul>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__img-link" href="#">
-              <img class="product__img" src="images/chicken-1000.png" width="140" height="107" alt="Баночка корма со вкусом курицы.">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-            </a>
-            <ul class="product__specs">
-              <li class="product__specs-item">
-                <p class="product__specs-field">Масса</p>
-                <p class="product__specs-value">1000 г</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Вкус</p>
-                <p class="product__specs-value">Курица</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Цена</p>
-                <p class="product__specs-value">1000 ₽</p>
-              </li>
-            </ul>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__img-link" href="#">
-              <img class="product__img" src="images/fish-500.png" width="140" height="107" alt="Баночка корма со вкусом рыбы.">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
-            </a>
-            <ul class="product__specs">
-              <li class="product__specs-item">
-                <p class="product__specs-field">Масса</p>
-                <p class="product__specs-value">500 г</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Вкус</p>
-                <p class="product__specs-value">Рыба</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Цена</p>
-                <p class="product__specs-value">700 ₽</p>
-              </li>
-            </ul>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__img-link" href="#">
-              <img class="product__img" src="images/fish-1000.png" width="140" height="107" alt="Баночка корма со вкусом рыбы.">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-            </a>
-            <ul class="product__specs">
-              <li class="product__specs-item">
-                <p class="product__specs-field">Масса</p>
-                <p class="product__specs-value">1000 г</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Вкус</p>
-                <p class="product__specs-value">Рыба</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Цена</p>
-                <p class="product__specs-value">1000 ₽</p>
-              </li>
-            </ul>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__img-link" href="#">
-              <img class="product__img" src="images/buckwheat-500.png" width="140" height="107" alt="Баночка корма со вкусом гречки.">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Cat Energy Slim 500 г</h3>
-            </a>
-            <ul class="product__specs">
-              <li class="product__specs-item">
-                <p class="product__specs-field">Масса</p>
-                <p class="product__specs-value">500 г</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Вкус</p>
-                <p class="product__specs-value">Гречка</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Цена</p>
-                <p class="product__specs-value">400 ₽</p>
-              </li>
-            </ul>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__img-link" href="#">
-              <img class="product__img" src="images/buckwheat-1000.png" width="140" height="107" alt="Баночка корма со вкусом гречки.">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Cat Energy Slim 1000 г</h3>
-            </a>
-            <ul class="product__specs">
-              <li class="product__specs-item">
-                <p class="product__specs-field">Масса</p>
-                <p class="product__specs-value">1000 г</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Вкус</p>
-                <p class="product__specs-value">Гречка</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Цена</p>
-                <p class="product__specs-value">700 ₽</p>
-              </li>
-            </ul>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__img-link" href="#">
-              <img class="product__img" src="images/rice-500.png" width="140" height="107" alt="Баночка корма со вкусом риса.">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Cat Energy Slim 500 г</h3>
-            </a>
-            <ul class="product__specs">
-              <li class="product__specs-item">
-                <p class="product__specs-field">Масса</p>
-                <p class="product__specs-value">500 г</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Вкус</p>
-                <p class="product__specs-value">Рис</p>
-              </li>
-              <li class="product__specs-item">
-                <p class="product__specs-field">Цена</p>
-                <p class="product__specs-value">500 ₽</p>
-              </li>
-            </ul>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="catalog__item card-more">
-            <p class="card-more__show-all">Показать еще 100500 товаров</p>
-            <p class="card-more__info">На самом деле вкусов гораздо больше!</p>
-            <a class="card-more__button button button--second" href="#">Показать все</a>
-          </li>
-        </ul>
+        <div class="catalog__container container">
+          <h1 class="main__title page-title">Каталог продукции</h1>
+          <ul class="catalog__list">
+            <li class="catalog__item product">
+              <a class="product__img-link" href="#">
+                <img class="product__img" src="images/chicken-500.png" width="140" height="107" alt="Баночка корма со вкусом курицы.">
+              </a>
+              <div class="product__content">
+                <a class="product__link" href="#">
+                  <h3 class="product__title">Cat Energy PRO 500 г</h3>
+                </a>
+                <dl class="product__specs">
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Масса</dt>
+                    <dd class="product__specs-value">500 г</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Вкус</dt>
+                    <dd class="product__specs-value">Курица</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Цена</dt>
+                    <dd class="product__specs-value">700 ₽</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="product__button button" href="#">Заказать</a>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__img-link" href="#">
+                <img class="product__img" src="images/chicken-1000.png" width="140" height="107" alt="Баночка корма со вкусом курицы.">
+              </a>
+              <div class="product__content">
+                <a class="product__link" href="#">
+                  <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+                </a>
+                <dl class="product__specs">
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Масса</dt>
+                    <dd class="product__specs-value">1000 г</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Вкус</dt>
+                    <dd class="product__specs-value">Курица</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Цена</dt>
+                    <dd class="product__specs-value">1000 ₽</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="product__button button" href="#">Заказать</a>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__img-link" href="#">
+                <img class="product__img" src="images/fish-500.png" width="140" height="107" alt="Баночка корма со вкусом рыбы.">
+              </a>
+              <div class="product__content">
+                <a class="product__link" href="#">
+                  <h3 class="product__title">Cat Energy PRO 500 г</h3>
+                </a>
+                <dl class="product__specs">
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Масса</dt>
+                    <dd class="product__specs-value">500 г</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Вкус</dt>
+                    <dd class="product__specs-value">Рыба</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Цена</dt>
+                    <dd class="product__specs-value">700 ₽</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="product__button button" href="#">Заказать</a>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__img-link" href="#">
+                <img class="product__img" src="images/fish-1000.png" width="140" height="107" alt="Баночка корма со вкусом рыбы.">
+              </a>
+              <div class="product__content">
+                <a class="product__link" href="#">
+                  <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+                </a>
+                <dl class="product__specs">
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Масса</dt>
+                    <dd class="product__specs-value">1000 г</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Вкус</dt>
+                    <dd class="product__specs-value">Рыба</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Цена</dt>
+                    <dd class="product__specs-value">1000 ₽</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="product__button button" href="#">Заказать</a>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__img-link" href="#">
+                <img class="product__img" src="images/buckwheat-500.png" width="140" height="107" alt="Баночка корма со вкусом гречки.">
+              </a>
+              <div class="product__content">
+                <a class="product__link" href="#">
+                  <h3 class="product__title">Cat Energy Slim 500 г</h3>
+                </a>
+                <dl class="product__specs">
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Масса</dt>
+                    <dd class="product__specs-value">500 г</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Вкус</dt>
+                    <dd class="product__specs-value">Гречка</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Цена</dt>
+                    <dd class="product__specs-value">400 ₽</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="product__button button" href="#">Заказать</a>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__img-link" href="#">
+                <img class="product__img" src="images/buckwheat-1000.png" width="140" height="107" alt="Баночка корма со вкусом гречки.">
+              </a>
+              <div class="product__content">
+                <a class="product__link" href="#">
+                  <h3 class="product__title">Cat Energy Slim 1000 г</h3>
+                </a>
+                <dl class="product__specs">
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Масса</dt>
+                    <dd class="product__specs-value">1000 г</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Вкус</dt>
+                    <dd class="product__specs-value">Гречка</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Цена</dt>
+                    <dd class="product__specs-value">700 ₽</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="product__button button" href="#">Заказать</a>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__img-link" href="#">
+                <img class="product__img" src="images/rice-500.png" width="140" height="107" alt="Баночка корма со вкусом риса.">
+              </a>
+              <div class="product__content">
+                <a class="product__link" href="#">
+                  <h3 class="product__title">Cat Energy Slim 500 г</h3>
+                </a>
+                <dl class="product__specs">
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Масса</dt>
+                    <dd class="product__specs-value">500 г</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Вкус</dt>
+                    <dd class="product__specs-value">Рис</dd>
+                  </div>
+                  <div class="product__specs-item">
+                    <dt class="product__specs-field">Цена</dt>
+                    <dd class="product__specs-value">500 ₽</dd>
+                  </div>
+                </dl>
+              </div>
+              <a class="product__button button" href="#">Заказать</a>
+            </li>
+            <li class="catalog__item product product--more">
+              <h3 class="product__title">Показать еще 100500 товаров</h3>
+              <p class="product__info">На самом деле вкусов гораздо больше!</p>
+              <a class="product__button button button--second" href="#">Показать все</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="extra">
-        <h2 class="extra__title section-title">Дополнительные товары</h2>
-        <ul class="extra__list">
-          <li class="extra__item extra-product">
-            <h3 class="extra-product__title">Сахарозаменитель</h3>
-            <div class="extra__specs">
-              <p class="extra__specs-field">1 упаковка (100 г)</p>
-              <p class="extra__specs-value">200 ₽</p>
+        <div class="extra__container container">
+          <h2 class="extra__title section-title">Дополнительные товары</h2>
+          <div class="extra__wrapper">
+            <ul class="extra__list">
+              <li class="extra__item">
+                <h3 class="extra__title">Сахарозаменитель</h3>
+                <p class="extra__specs-field">1 упаковка (100 г)</p>
+                <p class="extra__specs-value">200 ₽</p>
+                <a class="extra__button button" href="#">Заказать</a>
+              </li>
+              <li class="extra__item">
+                <h3 class="extra__title">Питьевая вода</h3>
+                <p class="extra__specs-field">5 литров</p>
+                <p class="extra__specs-value">50 ₽</p>
+                <a class="extra__button button" href="#">Заказать</a>
+              </li>
+              <li class="extra__item">
+                <h3 class="extra__title">Молоко</h3>
+                <p class="extra__specs-field">1 литр</p>
+                <p class="extra__specs-value">100 ₽</p>
+                <a class="extra__button button" href="#">Заказать</a>
+              </li>
+              <li class="extra__item">
+                <h3 class="extra__title">Витамины</h3>
+                <p class="extra__specs-field">1 упаковка (30 г)</p>
+                <p class="extra__specs-value">300 ₽</p>
+                <a class="extra__button button" href="#">Заказать</a>
+              </li>
+            </ul>
+            <div class="extra__promotion">
+              <p class="extra__promotion-title">Закажите все <br>и получите чехол для кота в подарок!</p>
             </div>
-            <a class="extra__button button" href="#">Заказать</a>
-          </li>
-          <li class="extra__item extra-product">
-            <h3 class="extra-product__title">Питьевая вода</h3>
-            <div class="extra__specs">
-              <p class="extra__specs-field">5 литров</p>
-              <p class="extra__specs-value">50 ₽</p>
-            </div>
-            <a class="extra__button button" href="#">Заказать</a>
-          </li>
-          <li class="extra__item extra-product">
-            <h3 class="extra-product__title">Молоко</h3>
-            <div class="extra__specs">
-              <p class="extra__specs-field">1 литр</p>
-              <p class="extra__specs-value">100 ₽</p>
-            </div>
-            <a class="extra__button button" href="#">Заказать</a>
-          </li>
-          <li class="extra__item extra-product">
-            <h3 class="extra-product__title">Витамины</h3>
-            <div class="extra__specs">
-              <p class="extra__specs-field">1 упаковка (30 г)</p>
-              <p class="extra__specs-value">300 ₽</p>
-            </div>
-            <a class="extra__button button" href="#">Заказать</a>
-          </li>
-        </ul>
-        <div class="extra__promotion">
-          <h2 class="visually-hidden">Акция</h2>
-          <p class="extra__promotion-title">Закажите все <br> и получите чехол для кота в подарок!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts__container container">
+          <div class="contacts__wrapper">
+            <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <noscript>
+            <a class="contacts__map-link" href="#">
+              <img src="images/map.png" width="320" height="362" alt="Карта с контактами.">
+            </a>
+          </noscript>
+          <div class="contacts__iframe">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1236a4500cdd847569ce7701ca78236c4ecef88fdbd6a297c03e80fd9e8ad7d7&amp;source=constructor"></iframe>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="page__footer page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="images/logo-footer.svg" width="128" height="24" alt="Интернет-магазин «Cat Energy».">
-      </a>
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте.</span>
-            <img src="images/vk.svg" width="28" height="22" alt="логотип ВКонтакте.">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--vkontakte" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб.</span>
-            <img src="images/youtube.svg" width="28" height="22" alt="Логотип Ютуб.">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--vkontakte" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм.</span>
-            <img src="images/telegram.svg" width="28" height="22" alt="Логотип Telegram.">
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/" aria-label="HTML Academy">
-          <img class="copyright__logo-image" src="images/logo-html.svg" width="27" height="34" alt="логотип HTML Academy">
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <a class="page-footer__logo" href="index.html" aria-current="page">
+          <img class="page-footer__logo-image" src="images/logo-footer.svg" width="128" height="24" alt="Интернет-магазин «Cat Energy».">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте.</span>
+              <img src="images/vk.svg" width="28" height="22" alt="логотип ВКонтакте.">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб.</span>
+              <img src="images/youtube.svg" width="28" height="22" alt="Логотип Ютуб.">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм.</span>
+              <img src="images/telegram.svg" width="28" height="22" alt="Логотип Telegram.">
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <span class="copyright__text">HTML Academy</span>
+          <img class="copyright__logo-image" src="images/logo-html.svg" width="27" height="34" alt="логотип HTML Academy.">
         </a>
       </div>
     </footer>
