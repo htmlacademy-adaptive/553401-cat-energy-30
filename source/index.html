@@ -9,7 +9,6 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <script src="scripts/index.js" defer></script>
   </head>
   <body class="body">
     <header class="page-header">
@@ -25,7 +24,7 @@
           </a>
           <button class="page-header__toggle button-toggle" aria-label="Открыть меню" type="button"></button>
           <nav class="page-header__navigation navigation">
-            <ul class="navigation__list">
+            <ul class="navigation__list list-reset">
               <li class="navigation__item">
                 <a class="navigation__link navigation__link--current" href="index.html" aria-current="page">Главная</a>
               </li>
@@ -63,7 +62,7 @@
       <section class="programs">
         <div class="programs__container container">
           <h2 class="visually-hidden">Выбор программы</h2>
-          <ul class="programs__list">
+          <ul class="programs__list list-reset">
             <li class="programs__item program-card">
               <h3 class="program-card__title">Похудение</h3>
               <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -81,7 +80,7 @@
       <section class="description">
         <div class="description__container container">
           <h2 class="description__title page-title">Как это работает</h2>
-          <ul class="description__list">
+          <ul class="description__list list-reset">
             <li class="description__item description__item--natural">Функциональное питание содержит только полезные питательные вещества.</li>
             <li class="description__item description__item--water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
             <li class="description__item description__item--food">Замените один-два приема обычной еды на наше функциональное питание.</li>
@@ -169,7 +168,7 @@
         <a class="page-footer__logo logo" href="index.html" aria-current="page">
           <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Интернет-магазин «Cat Energy».">
         </a>
-        <ul class="page-footer__social social">
+        <ul class="page-footer__social social list-reset">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте.</span>
@@ -195,5 +194,6 @@
         </a>
       </div>
     </footer>
+    <script src="scripts/index.js" defer></script>
   </body>
 </html>

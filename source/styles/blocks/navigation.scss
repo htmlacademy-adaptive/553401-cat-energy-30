@@ -1,0 +1,12 @@
+.navigation {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $secondary-color-text;
+  text-transform: uppercase;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: inherit;
+}

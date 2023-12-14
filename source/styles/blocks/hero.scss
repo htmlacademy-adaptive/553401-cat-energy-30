@@ -1,0 +1,16 @@
+.hero {
+  font-family: $secondary-font;
+  color: $contrast-color-text;
+  //временно
+  background-image: linear-gradient(rgba($base-bg-color, 85%) 70%, transparent 70% 100%);
+}
+
+.hero__title {
+  color: $contrast-color-text;
+}
+
+.hero__span {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
