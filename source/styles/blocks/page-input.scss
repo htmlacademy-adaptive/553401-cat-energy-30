@@ -6,6 +6,6 @@
   color: $base-color-text;
 
   &::placeholder {
-    color: $base-color-text;
+    opacity: 0.6;
   }
 }

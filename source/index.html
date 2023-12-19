@@ -20,7 +20,9 @@
               <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-picture-tablet.svg">
               <img class="logo__image logo__image--icon" src="images/logo-picture.svg" width="33" height="38" alt="Логотип «Cat Energy».">
             </picture>
-            <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" alt="Интернет-магазин «Cat Energy».">
+            <svg class="logo__image logo__image--text" width="101" height="18" aria-hidden="true" focusable="false">
+              <use href="images/icons/stack.svg#logo-text"></use>
+            </svg>
           </a>
           <button class="page-header__toggle button-toggle" aria-label="Открыть меню" type="button"></button>
           <nav class="page-header__navigation navigation">
@@ -45,13 +47,13 @@
             <p class="hero__span">Занялся собой? Займись котом!</p>
           </div>
           <picture>
-            <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/promo-desktop@1x.webp 1x, images/promo-desktop@2x.webp 2x">
-            <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/promo-tablet@1x.webp 1x, images/promo-tablet@2x.webp 2x">
-            <source width="280" height="270" type="image/webp" srcset="images/promo-mobile@1x.webp 1x, images/promo-mobile@2x.webp 2x">
+            <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/promo/promo-desktop@1x.webp 1x, images/promo/promo-desktop@2x.webp 2x">
+            <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/promo/promo-tablet@1x.webp 1x, images/promo/promo-tablet@2x.webp 2x">
+            <source width="280" height="270" type="image/webp" srcset="images/promo/promo-mobile@1x.webp 1x, images/promo/promo-mobile@2x.webp 2x">
 
-            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo-desktop@1x.png 1x, images/promo-desktop@2x.png 2x">
-            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x">
-            <img class="hero__image" src="images/promo-mobile@1x.png" srcset="images/promo-mobile@2x.png 2x" width="280" height="270" alt="Банка с кормом.">
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo/promo-desktop@1x.png 1x, images/promo/promo-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo/promo-tablet@1x.png 1x, images/promo/promo-tablet@2x.png 2x">
+            <img class="hero__image" src="images/promo-mobile@1x.png" srcset="images/promo/promo-mobile@2x.png 2x" width="280" height="270" alt="Банка с кормом.">
           </picture>
           <a class="hero__button button" href="form.html">Подобрать программу</a>
         </section>
@@ -111,20 +113,20 @@
           <div class="example__slider slider">
             <div class="slider__image slider__image--before">
               <picture>
-                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-fat-tablet@1x.webp 1x, images/cat-fat-tablet@2x.webp 2x">
-                <source width="280" height="256" type="image/webp" srcset="images/cat-fat-mobile@1x.webp 1x, images/cat-fat-mobile@2x.webp 2x">
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/slider/cat-fat-tablet@1x.webp 1x, images/slider/cat-fat-tablet@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/slider/cat-fat-mobile@1x.webp 1x, images/slider/cat-fat-mobile@2x.webp 2x">
 
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x">
-                <img src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Пухлый кот.">
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-fat-tablet@1x.png 1x, images/slider/cat-fat-tablet@2x.png 2x">
+                <img src="images/slider/cat-fat-mobile@1x.png" srcset="images/slider/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Пухлый кот.">
               </picture>
             </div>
             <div class="slider__image slider__image--after">
               <picture>
-                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-skinny-tablet@1x.webp 1x, images/cat-skinny-tablet@2x.webp 2x">
-                <source width="280" height="256" type="image/webp" srcset="images/cat-skinny-mobile@1x.webp 1x, images/cat-skinny-mobile@2x.webp 2x">
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/slider/cat-skinny-tablet@1x.webp 1x, images/slider/cat-skinny-tablet@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/slider/cat-skinny-mobile@1x.webp 1x, images/slider/cat-skinny-mobile@2x.webp 2x">
 
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-skinny-tablet@1x.png 1x, images/cat-skinny-tablet@2x.png 2x">
-                <img src="images/cat-skinny-mobile@1x.png" srcset="images/cat-skinny-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-skinny-tablet@1x.png 1x, images/slider/cat-skinny-tablet@2x.png 2x">
+                <img src="images/slider/cat-skinny-mobile@1x.png" srcset="images/slider/cat-skinny-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
               </picture>
             </div>
             <button class="slider__change-control" type="button">
@@ -146,13 +148,13 @@
           <noscript>
             <a class="contacts__map-link" href="#">
               <picture>
-                <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
-                <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
-                <source width="320" height="362" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+                <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
+                <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
+                <source width="320" height="362" type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
 
-                <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-                <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-                <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с контактами.">
+                <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+                <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="imagesmap//map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+                <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с контактами.">
               </picture>
             </a>
           </noscript>
@@ -165,8 +167,10 @@
 
     <footer class="page-footer">
       <div class="page-footer__container container">
-        <a class="page-footer__logo logo" href="index.html" aria-current="page">
-          <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Интернет-магазин «Cat Energy».">
+        <a class="page-footer__logo logo logo--footer" href="index.html" aria-current="page">
+          <svg class="logo__image logo__image--text" width="128" height="24" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#logo-text"></use>
+          </svg>
         </a>
         <ul class="page-footer__social social list-reset">
           <li class="social__item">

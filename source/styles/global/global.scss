@@ -4,17 +4,22 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+html {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
