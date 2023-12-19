@@ -1,0 +1,27 @@
+.hero {
+  font-family: $secondary-font;
+  color: $contrast-color-text;
+}
+
+.hero__content {
+  @include adaptive-bg("../../images/promo-bg-mobile", "jpg", linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)));
+
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__title {
+  line-height: 36px; // только для мобилки
+  color: $contrast-color-text;
+}
+
+.hero__span {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.hero__image {
+  margin-top: -130px;
+}

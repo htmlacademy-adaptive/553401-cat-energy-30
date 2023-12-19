@@ -1,0 +1,35 @@
+.extra__item {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.extra__block-title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.extra__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.extra__promotion {
+  background-image: url("../../images/extra-icon.svg"), linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)),
+    image-set(
+      url("../../images/extra-bg-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/extra-bg-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/extra-bg-mobile@2x.jpg") 2x,
+      url("../../images/extra-bg-mobile@1x.jpg") 1x
+    );
+  background-repeat: no-repeat;
+  background-position: center, center, center;
+  background-size: auto, auto, cover;
+  font-size: 16px;
+  line-height: 20px;
+  color: $contrast-color-text;
+}

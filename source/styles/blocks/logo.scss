@@ -1,0 +1,30 @@
+.logo {
+  text-decoration: none;
+  color: #111111;
+  --color-cat-text: #111111;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--footer {
+    &:hover,
+    &:focus {
+      color: #3E3E3E;
+      --color-cat-text: #3E3E3E;
+      opacity: 1;
+    }
+
+    &:active {
+      color: #6B6B6B;
+      --color-cat-text: #6B6B6B;
+      opacity: 1;
+    }
+  }
+}

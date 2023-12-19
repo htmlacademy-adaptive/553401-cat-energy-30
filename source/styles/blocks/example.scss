@@ -1,0 +1,11 @@
+.example {
+  background-color: $third-bg-color;
+}
+
+.example__total {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $secondary-color-text;
+}

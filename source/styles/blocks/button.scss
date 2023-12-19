@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  padding: 10px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $contrast-color-text;
+  background-color: $base-bg-color;
+  border: none;
+
+  &--second {
+    color: $secondary-color-text;
+    background-color: $second-bg-color;
+  }
+}

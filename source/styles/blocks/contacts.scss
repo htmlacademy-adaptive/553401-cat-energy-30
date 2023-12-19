@@ -1,0 +1,25 @@
+.contacts {
+  background-color: $third-bg-color;
+
+  &--index {
+    background-color: transparent;
+  }
+}
+
+.contacts__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $secondary-color-text;
+}
+
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts iframe {
+  width: 100%;
+}
