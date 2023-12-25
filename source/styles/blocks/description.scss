@@ -1,0 +1,36 @@
+.description__item {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px auto;
+  }
+
+  &--natural {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#icon-leaf");
+    }
+  }
+
+  &--water {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#icon-water");
+    }
+  }
+
+  &--food {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#icon-eat");
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#icon-watch");
+    }
+  }
+}

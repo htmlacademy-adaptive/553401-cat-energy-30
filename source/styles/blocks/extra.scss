@@ -19,7 +19,9 @@
 }
 
 .extra__promotion {
-  background-image: url("../../images/extra-icon.svg"), linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)),
+  background-image:
+    url("../../images/icons/stack.svg#icon-extra"),
+    linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)),
     image-set(
       url("../../images/extra-bg-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/extra-bg-mobile@1x.webp") type("image/webp") 1x,

@@ -2,5 +2,18 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  color: $special-color;
+
+  &:hover,
+  &:focus {
+    color: $base-bg-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
   color: $base-color-text;
 }
