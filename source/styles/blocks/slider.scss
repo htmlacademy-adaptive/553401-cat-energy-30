@@ -1,0 +1,30 @@
+.slider__change-control {
+  position: relative;
+  padding: 0;
+  width: 4px;
+  height: 256px;
+  color: $special-color;
+  background-color: $special-color;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $base-bg-color;
+    background-color: $base-bg-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+    color: $special-bg-color;
+    background-color: $special-bg-color;
+  }
+}
+
+.slider__change-control svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

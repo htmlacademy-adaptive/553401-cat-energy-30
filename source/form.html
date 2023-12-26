@@ -16,9 +16,9 @@
         <div class="page-header__menu">
           <a class="page-header__logo logo" href="index.html" aria-current="page">
             <picture>
-              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-picture-desktop.svg">
-              <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-picture-tablet.svg">
-              <img class="logo__image logo__image--icon" src="images/logo-picture.svg" width="33" height="38" alt="Логотип «Cat Energy».">
+              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+              <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy».">
             </picture>
             <svg class="logo__image logo__image--text" width="101" height="18" aria-hidden="true" focusable="false">
               <use href="images/icons/stack.svg#logo-text"></use>
@@ -174,34 +174,27 @@
 
     <footer class="page-footer">
       <div class="page-footer__container container">
-        <a class="page-footer__logo logo logo--footer" href="index.html" aria-current="page">
+        <a class="page-footer__logo logo logo--footer" href="index.html" aria-label="Перейти на главную страницу.">
           <svg class="logo__image logo__image--text" width="128" height="24" aria-hidden="true" focusable="false">
             <use href="images/icons/stack.svg#logo-text"></use>
           </svg>
         </a>
         <ul class="page-footer__social social list-reset">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте.</span>
-              <img src="images/vk.svg" width="28" height="22" alt="логотип ВКонтакте.">
-            </a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Группа HTML Academy Вконтакте."></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб.</span>
-              <img src="images/youtube.svg" width="28" height="22" alt="Логотип Ютуб.">
-            </a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Канал HTML Academy в Ютубе."></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм.</span>
-              <img src="images/telegram.svg" width="28" height="22" alt="Логотип Telegram.">
-            </a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Группа HTML Academy в Телеграме."></a>
           </li>
         </ul>
-        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Интенсив HTML Academy Адаптивная верстка.">
           <span class="copyright__text">HTML Academy</span>
-          <img class="copyright__logo-image" src="images/logo-html.svg" width="27" height="34" alt="логотип HTML Academy.">
+          <svg class="copyright__logo-image" width="27" height="34" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#logo-html"></use>
+          </svg>
         </a>
       </div>
     </footer>
