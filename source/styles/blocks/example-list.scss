@@ -1,12 +1,26 @@
+.example-list {
+  display: flex;
+}
+
 .example-list__value {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   color: $secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-list__field {
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

@@ -1,0 +1,22 @@
+.programs {
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 0 71px;
+  }
+}
+
+.programs__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}

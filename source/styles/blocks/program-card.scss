@@ -1,41 +1,72 @@
 .program-card {
   position: relative;
+  padding: 30px 20px 18px;
   background-color: $second-bg-color;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-  }
+  background-repeat: no-repeat;
 
   &--slim {
-    &::after {
-      width: 50px;
-      height: 53px;
-      background-image: url("../../images/icons/stack.svg#cat-slim");
-      background-repeat: no-repeat;
-    }
+    background-image: url("../../images/icons/stack.svg#cat-slim");
+    background-size: 50px 53px;
+    background-position: 20px 21px;
   }
 
   &--pro {
-    &::after {
-      width: 67px;
-      height: 50px;
-      background-image: url("../../images/icons/stack.svg#cat-pro");
-      background-repeat: no-repeat;
+    background-image: url("../../images/icons/stack.svg#cat-pro");
+    background-size: 67px 50px;
+    background-position: 13px 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
+    min-height: 372px;
+
+    &--slim {
+      background-size: 200px 211px;
+      background-position: top 81px right 63px;
+    }
+
+    &--pro {
+      background-size: 268px 200px;
+      background-position: top 91px right 29px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 52px 55px;
+    min-height: auto;
+
+    &--slim {
+      background-size: 100px 106px;
+      background-position: top 41px left 52px;
+    }
+
+    &--pro {
+      background-size: 134px 100px;
+      background-position: top 47px left 33px;
     }
   }
 }
 
 .program-card__title {
+  margin: 0;
+  padding-left: 70px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   color: $secondary-color-text;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .program-card__link {
@@ -65,5 +96,10 @@
 
   &:hover::after {
     background-position-x: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

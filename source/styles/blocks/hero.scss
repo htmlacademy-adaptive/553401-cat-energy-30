@@ -1,27 +1,91 @@
 .hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   font-family: $secondary-font;
   color: $contrast-color-text;
+
+  @media (min-width: $tablet-width) {
+    color: $secondary-color-text;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    min-height: 602px;
+    padding-top: 29px;
+  }
 }
 
 .hero__content {
   @include adaptive-bg("../../images/promo-bg-mobile", "jpg", linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)));
 
-  padding-bottom: 200px;
+  padding: 27px 20px 150px;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 90px 0;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 80px 0;
+    width: 500px;
+  }
 }
 
 .hero__title {
-  line-height: 36px; // только для мобилки
-  color: $contrast-color-text;
+  margin: 0 0 25px;
+  color: inherit;
+
+  @media (max-width: $mobile-width-only) {
+    line-height: 36px;
+  }
 }
 
 .hero__span {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .hero__image {
-  margin-top: -130px;
+  margin: -135px auto 0;
+  display: block;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    left: -55px;
+    z-index: -1;
+  }
+}
+
+.hero__button {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 0;
+    left: 90px;
+    bottom: 526px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 80px;
+    bottom: 280px;
+  }
 }

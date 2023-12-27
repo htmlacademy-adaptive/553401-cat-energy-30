@@ -1,8 +1,32 @@
-.slider__change-control {
+.slider {
   position: relative;
+  overflow: hidden;
+}
+
+.slider__image {
+  &--before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.slider img {
+  display: block;
+  max-width: none;
+}
+
+.slider__change-control {
+  position: absolute;
   padding: 0;
+  left: 50%;
+  top: 0;
   width: 4px;
   height: 256px;
+  transform: translateX(-50%);
   color: $special-color;
   background-color: $special-color;
   border: none;
@@ -19,6 +43,10 @@
     opacity: 0.6;
     color: $special-bg-color;
     background-color: $special-bg-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
   }
 }
 
