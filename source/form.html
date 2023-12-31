@@ -14,7 +14,7 @@
     <header class="page-header">
       <div class="page-header__container container">
         <div class="page-header__menu">
-          <a class="page-header__logo logo" href="index.html" aria-current="page">
+          <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
             <picture>
               <source width="70" height="59" type="image/svg+xml" media="(min-width: 1260px)" srcset="images/logo-desktop.svg">
               <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
@@ -89,9 +89,7 @@
           </div>
 
           <fieldset class="form__fieldset form__fieldset--contacts container">
-            <legend class="visually-hidden" hidden>Контактные данные (владельца кота)</legend>
-            <h2 class="form__legend section-title">Контактные данные (владельца кота)</h2>
-
+            <legend class="form__legend section-title">Контактные данные (владельца кота)</legend>
             <div class="form__group-item">
               <label class="form__label" for="email">E-mail:<sup>*</sup></label>
               <span class="form__input-wrapper form__input-wrapper--email">
@@ -107,15 +105,13 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--comment container">
-            <legend class="visually-hidden" hidden>Комментарий</legend>
-            <h2 class="form__legend section-title">Комментарий</h2>
+            <legend class="form__legend section-title">Комментарий</legend>
             <label class="visually-hidden" for="comment">Расскажите про кота</label>
             <textarea class="form__textarea page-input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--check container">
-            <legend class="visually-hidden" hidden>Дополнительно</legend>
-            <h2 class="form__legend section-title">Дополнительно</h2>
+            <legend class="form__legend section-title">Дополнительно</legend>
             <ul class="control control--check list-reset">
               <li class="control__item">
                 <input class="control__input control__input--check" type="checkbox" id="sugar" name="sugar" checked>
@@ -145,9 +141,11 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__content">
-          <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
+        <div class="contacts__container container">
+          <div class="contacts__content">
+            <span class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</span>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
+          </div>
         </div>
         <div class="contacts__map">
           <noscript>

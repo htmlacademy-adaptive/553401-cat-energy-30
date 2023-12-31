@@ -14,7 +14,7 @@
     <header class="page-header page-header--index">
       <div class="page-header__container container">
         <div class="page-header__menu">
-          <a class="page-header__logo logo" href="index.html" aria-current="page">
+          <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
             <picture>
               <source width="70" height="59" type="image/svg+xml" media="(min-width: 1260px)" srcset="images/logo-desktop.svg">
               <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
@@ -46,34 +46,36 @@
             <h2 class="hero__title page-title">Функциональное питание для котов</h2>
             <p class="hero__span">Занялся собой? Займись котом!</p>
           </div>
-          <picture>
-            <source width="552" height="499" type="image/webp" media="(min-width: 1260px)" srcset="images/promo/promo-desktop@1x.webp 1x, images/promo/promo-desktop@2x.webp 2x">
-            <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/promo/promo-tablet@1x.webp 1x, images/promo/promo-tablet@2x.webp 2x">
-            <source width="280" height="270" type="image/webp" srcset="images/promo/promo-mobile@1x.webp 1x, images/promo/promo-mobile@2x.webp 2x">
+          <div class="hero__image">
+            <picture>
+              <source width="552" height="499" type="image/webp" media="(min-width: 1260px)" srcset="images/promo/promo-desktop@1x.webp 1x, images/promo/promo-desktop@2x.webp 2x">
+              <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/promo/promo-tablet@1x.webp 1x, images/promo/promo-tablet@2x.webp 2x">
+              <source width="280" height="270" type="image/webp" srcset="images/promo/promo-mobile@1x.webp 1x, images/promo/promo-mobile@2x.webp 2x">
 
-            <source width="552" height="499" type="image/png" media="(min-width: 1260px)" srcset="images/promo/promo-desktop@1x.png 1x, images/promo/promo-desktop@2x.png 2x">
-            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo/promo-tablet@1x.png 1x, images/promo/promo-tablet@2x.png 2x">
-            <img class="hero__image" src="images/promo-mobile@1x.png" srcset="images/promo/promo-mobile@2x.png 2x" width="280" height="270" alt="Банка с кормом.">
-          </picture>
+              <source width="552" height="499" type="image/png" media="(min-width: 1260px)" srcset="images/promo/promo-desktop@1x.png 1x, images/promo/promo-desktop@2x.png 2x">
+              <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo/promo-tablet@1x.png 1x, images/promo/promo-tablet@2x.png 2x">
+              <img src="images/promo-mobile@1x.png" srcset="images/promo/promo-mobile@2x.png 2x" width="280" height="270" alt="Банка с кормом.">
+            </picture>
+          </div>
           <a class="hero__button button" href="form.html">Подобрать программу</a>
         </section>
       </div>
     </header>
 
     <main class="main">
-      <section class="programs">
-        <div class="programs__container container">
+      <section class="program">
+        <div class="program__container container">
           <h2 class="visually-hidden">Выбор программы</h2>
-          <ul class="programs__list list-reset">
-            <li class="programs__item program-card program-card--slim">
-              <h3 class="program-card__title">Похудение</h3>
-              <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program-card__link" href="#">Каталог slim</a>
+          <ul class="program__list list-reset">
+            <li class="program__item program__item--slim">
+              <h3 class="program__title">Похудение</h3>
+              <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="program__link" href="#">Каталог slim</a>
             </li>
-            <li class="programs__item program-card program-card--pro">
-              <h3 class="program-card__title">Набор массы</h3>
-              <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program-card__link" href="#">Каталог pro</a>
+            <li class="program__item program__item--pro">
+              <h3 class="program__title">Набор массы</h3>
+              <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="program__link" href="#">Каталог pro</a>
             </li>
           </ul>
         </div>
@@ -130,9 +132,11 @@
               </picture>
             </div>
             <button class="slider__change-control" type="button" aria-label="Ползунок визуализации состояния питомца при разных программах питания">
-              <svg width="40" height="40" aria-hidden="true" focusable="false">
-                <use href="images/icons/stack.svg#thumb"></use>
-              </svg>
+              <span>
+                <svg width="24" height="18" aria-hidden="true" focusable="false">
+                  <use href="images/icons/stack.svg#thumb"></use>
+                </svg>
+              </span>
             </button>
           </div>
         </div>
@@ -140,9 +144,11 @@
 
       <section class="contacts contacts--index">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__content">
-          <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
+        <div class="contacts__container container">
+          <div class="contacts__content">
+            <span class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</span>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
+          </div>
         </div>
         <div class="contacts__map">
           <noscript>
@@ -192,5 +198,6 @@
       </div>
     </footer>
     <script src="scripts/index.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
   </body>
 </html>

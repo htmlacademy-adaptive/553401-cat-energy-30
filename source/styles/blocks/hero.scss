@@ -1,33 +1,36 @@
 .hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   text-align: center;
   font-family: $secondary-font;
   color: $contrast-color-text;
 
   @media (min-width: $tablet-width) {
+    display: grid;
     color: $secondary-color-text;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    grid-template-columns: auto 1fr;
+    align-items: start;
     min-height: 602px;
     padding-top: 29px;
+    padding-bottom: 54px;
   }
 }
 
 .hero__content {
-  @include adaptive-bg("../../images/promo-bg-mobile", "jpg", linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)));
+  @media (max-width: $mobile-width-only) {
+    @include adaptive-bg("../../images/promo-bg-mobile", "jpg", linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)));
 
-  padding: 27px 20px 150px;
-  background-repeat: no-repeat;
-  background-size: cover;
+    margin: 0 (-$page-padding);
+    padding: 27px $page-padding 114px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 65px 90px 0;
-    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,35 +60,48 @@
 }
 
 .hero__image {
-  margin: -135px auto 0;
-  display: block;
-  align-self: center;
+  margin: -100px auto 0;
+  width: 280px;
+  height: 270px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    position: relative;
+    z-index: -1;
+    order: 1;
+    margin: -50px auto 0;
+    width: 100%;
+    max-width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-    left: -55px;
-    z-index: -1;
+    grid-column: -2 / -1;
+    grid-row: 1 / 4;
+    order: unset;
+    width: 552px;
+    height: 499px;
+    margin: 0 0 0 -100px;
   }
 }
 
+.hero__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hero__button {
-  margin: 0 20px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    margin: 0;
-    left: 90px;
-    bottom: 526px;
+    width: 244px;
+    margin: 0 0 0 90px;
+    padding: 17px 10px;
     font-size: 20px;
     line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 80px;
-    bottom: 280px;
+    margin: 0;
   }
 }

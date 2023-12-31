@@ -1,13 +1,19 @@
 .example-list {
   display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .example-list__value {
+  min-width: 124px;
+  padding: 14px 21px 17px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   color: $secondary-color-text;
+  border: 1px solid $extra-border-color;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -16,8 +22,11 @@
 }
 
 .example-list__field {
+  width: 80px;
+  margin: -7px auto 0;
   font-size: 12px;
   line-height: 12px;
+  background-color: $third-bg-color;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;

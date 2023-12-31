@@ -13,16 +13,12 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
 
-    &--index {
+  &--index {
+    @media (min-width: $desktop-width) {
       color: $contrast-color-text;
     }
-  }
-}
-
-.navigation--index .navigation__link--current {
-  @media (min-width: $desktop-width) {
-    text-decoration-color: $contrast-color-text;
   }
 }
 
@@ -58,15 +54,23 @@
   color: inherit;
 
   @media (min-width: $tablet-width) {
-    padding: 10px;
+    padding: 0;
     margin: 0;
+  }
 
-    &--current {
+  &--current {
+    @media (min-width: $tablet-width) {
       text-decoration: underline;
       text-decoration-style: solid;
       text-decoration-color: $base-bg-color;
       text-decoration-thickness: 2px;
       text-underline-offset: 10px;
     }
+  }
+}
+
+.navigation--index .navigation__link--current {
+  @media (min-width: $desktop-width) {
+    text-decoration-color: $contrast-color-text;
   }
 }

@@ -2,28 +2,22 @@
   position: relative;
   padding-bottom: 20px;
 
-  @media (min-width: $desktop-width) {
-    &--index::before {
+  &--index::before {
+    @media (min-width: $desktop-width) {
       content: "";
 
       @include adaptive-bg("../../images/promo-bg-desktop", "jpg", linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)));
 
       position: absolute;
-      width: 50%;
-      height: 100%;
-      top: 0;
+      left: 50%;
       right: 0;
+      top: 0;
+      bottom: 0;
       background-repeat: no-repeat;
       background-position: left;
       background-size: cover;
       z-index: -2;
     }
-  }
-}
-
-.page-header__container {
-  @media (max-width: $mobile-width-only) {
-    padding: 0;
   }
 }
 
@@ -37,39 +31,45 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 174px 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .page-header__logo {
-  margin-left: 20px;
   margin-bottom: 14px;
-  // 30px = 50px (половина текстового лого) - 20px (отступ от левого края);
-  width: calc(50% + 30px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 174px;
   }
 }
 
 .page-header__navigation {
-  @media (min-width: $tablet-width) {
-    margin: 0 -10px 0 auto;
-    padding-top: 4px;
-  }
+  position: absolute;
+  display: none;
+  z-index: 2;
+  top: 100%;
+  right: -($page-padding);
+  left: -($page-padding);
+  background-color: $standard-bg-color;
 
-  @media (min-width: $desktop-width) {
-    max-width: 50%;
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: block;
+    background-color: transparent;
   }
+}
+
+.page-header__menu.is-open .page-header__navigation {
+  display: block;
 }
 
 .page-header__toggle {
   position: absolute;
   top: 13px;
-  // кнопку сделал с паддингами 7px, поэтому не 21px, а 14px
-  right: 14px;
+  // кнопку сделал с паддингами 7px
+  right: -7px;
 
   @media (min-width: $tablet-width) {
     display: none;
