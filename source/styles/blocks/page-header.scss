@@ -65,6 +65,14 @@
   display: block;
 }
 
+.page-header__menu--no-js .page-header__navigation {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    position: static;
+    margin: 0 -20px;
+  }
+}
+
 .page-header__toggle {
   position: absolute;
   top: 13px;
@@ -74,4 +82,8 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.page-header__menu--no-js .page-header__toggle {
+  display: none;
 }

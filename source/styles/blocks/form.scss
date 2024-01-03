@@ -84,6 +84,58 @@
   padding-right: 13px;
 }
 
+.form__input-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 20px 20px;
+    background-color: #000000;
+  }
+
+  &--email {
+    &::after {
+      mask-image: url("../../images/icons/stack.svg#icon-email");
+    }
+  }
+
+  &--tel {
+    &::after {
+      mask-image: url("../../images/icons/stack.svg#icon-phone");
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-color: #222222;
+    }
+  }
+
+  &:focus-within {
+    &::after {
+      background-color: $special-bg-color;
+    }
+  }
+
+  &:has(input:invalid) {
+    &::after {
+      background-color: $input-border-color-err;
+    }
+  }
+}
+
+.form__input-wrapper .form__input {
+  padding-right: 40px;
+}
+
 .form__button {
   width: 100%;
 }
