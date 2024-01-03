@@ -67,6 +67,10 @@
   }
 }
 
+.contacts__map--no-js .contacts__iframe {
+  display: none;
+}
+
 .contacts iframe,
 .contacts__iframe {
   display: block;

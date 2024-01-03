@@ -21,4 +21,9 @@
     border-color: $input-border-color-focus;
     outline: none;
   }
+
+  &:invalid {
+    border-color: $input-border-color-err;
+    outline: none;
+  }
 }
