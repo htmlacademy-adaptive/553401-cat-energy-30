@@ -1,1 +1,0 @@
-var t=document.querySelector(".page-header__menu"),e=t.querySelector(".page-header__toggle");e.addEventListener("click",n=>{n.preventDefault(),t.classList.toggle("is-open"),e.classList.toggle("is-open")});
