@@ -1,3 +1,9 @@
+.program-select .container {
+  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+    padding: 0 70px;
+  }
+}
+
 .program-select__description {
   font-family: $secondary-font;
   font-size: 14px;

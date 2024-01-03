@@ -14,9 +14,9 @@
     <header class="page-header">
       <div class="page-header__container container">
         <div class="page-header__menu">
-          <a class="page-header__logo logo" href="index.html" aria-current="page">
+          <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
             <picture>
-              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1260px)" srcset="images/logo-desktop.svg">
               <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
               <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy».">
             </picture>
@@ -49,7 +49,7 @@
           <p class="program-select__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </header>
 
-        <form class="program-select__form form" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="program-select__form form line" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__wrapper container">
             <fieldset class="form__fieldset form__fieldset--data">
               <legend class="visually-hidden">Персональные данные</legend>
@@ -89,9 +89,7 @@
           </div>
 
           <fieldset class="form__fieldset form__fieldset--contacts container">
-            <legend class="visually-hidden" hidden>Контактные данные (владельца кота)</legend>
-            <h2 class="form__legend section-title">Контактные данные (владельца кота)</h2>
-
+            <legend class="form__legend line__title">Контактные данные <br>(владельца кота)</legend>
             <div class="form__group-item">
               <label class="form__label" for="email">E-mail:<sup>*</sup></label>
               <span class="form__input-wrapper form__input-wrapper--email">
@@ -107,15 +105,13 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--comment container">
-            <legend class="visually-hidden" hidden>Комментарий</legend>
-            <h2 class="form__legend section-title">Комментарий</h2>
+            <legend class="form__legend line__title">Комментарий</legend>
             <label class="visually-hidden" for="comment">Расскажите про кота</label>
             <textarea class="form__textarea page-input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--check container">
-            <legend class="visually-hidden" hidden>Дополнительно</legend>
-            <h2 class="form__legend section-title">Дополнительно</h2>
+            <legend class="form__legend line__title">Дополнительно</legend>
             <ul class="control control--check list-reset">
               <li class="control__item">
                 <input class="control__input control__input--check" type="checkbox" id="sugar" name="sugar" checked>
@@ -146,8 +142,8 @@
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__container container">
-          <div class="contacts__wrapper">
-            <span class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</span>
+          <div class="contacts__content">
+            <span class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</span>
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
           </div>
         </div>
@@ -155,11 +151,11 @@
           <noscript>
             <a class="contacts__map-link" href="#">
               <picture>
-                <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
+                <source width="1440" height="400" type="image/webp" media="(min-width: 1260px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
                 <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
                 <source width="320" height="362" type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
 
-                <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+                <source width="1440" height="400" type="image/png" media="(min-width: 1260px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
                 <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="imagesmap//map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
                 <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с контактами.">
               </picture>

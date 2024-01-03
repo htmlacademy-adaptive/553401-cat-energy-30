@@ -1,14 +1,15 @@
 .button-toggle {
-  position: relative;
   padding: 7px;
   width: 38px;
   height: 38px;
   background-color: transparent;
   border: none;
+  color: #000000;
   cursor: pointer;
 
   &::before,
   &::after {
+    content: "";
     position: absolute;
     display: block;
     top: 50%;
@@ -16,23 +17,27 @@
     width: 24px;
     height: 2px;
     transform: translate(-50%, -50%);
-    background-color: #000000;
+    transition: 0.3s ease-in-out;
+    background-color: currentColor;
+  }
+
+  &::after {
+    opacity: 0;
   }
 
   &::before {
-    content: "";
-    box-shadow: 0 8px 0 #000000, 0 -8px 0 #000000;
+    box-shadow: 0 8px 0 currentColor, 0 -8px 0 currentColor;
   }
-  // далее функционал будет не на hover, а на классах
-  &:hover {
-    &::before {
-      transform: translate(-50%, -50%) rotate(-45deg);
-      box-shadow: none;
-    }
+}
 
-    &::after {
-      content: "";
-      transform: translate(-50%, -50%) rotate(45deg);
-    }
+.button-toggle.is-open {
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(45deg);
   }
 }

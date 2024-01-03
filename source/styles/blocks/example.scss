@@ -1,5 +1,38 @@
 .example {
+  padding: 25px 0 40px;
   background-color: $third-bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 75px;
+  }
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 440px 560px;
+    justify-content: space-between;
+  }
+}
+
+.example__title {
+  margin: 0 0 40px;
+}
+
+.example__list-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    // align-items: start;
+  }
 }
 
 .example__total {
@@ -7,5 +40,27 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.example__total-price {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.example__slider {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
 }

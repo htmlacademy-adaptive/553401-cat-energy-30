@@ -1,4 +1,77 @@
-.page-header__container {
-  padding-left: 0;
-  padding-right: 0;
+.page-header {
+  position: relative;
+  padding-bottom: 20px;
+
+  &--index::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+
+      @include adaptive-bg("../../images/promo-bg-desktop", "jpg", linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)));
+
+      position: absolute;
+      left: 50%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+      z-index: -2;
+    }
+  }
+}
+
+.page-header__menu {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  padding: 13px 0 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 174px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.page-header__logo {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-header__navigation {
+  position: absolute;
+  display: none;
+  z-index: 2;
+  top: 100%;
+  right: -($page-padding);
+  left: -($page-padding);
+  background-color: $standard-bg-color;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: block;
+    background-color: transparent;
+  }
+}
+
+.page-header__menu.is-open .page-header__navigation {
+  display: block;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 13px;
+  // кнопку сделал с паддингами 7px
+  right: -7px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

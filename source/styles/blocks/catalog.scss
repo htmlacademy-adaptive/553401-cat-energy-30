@@ -1,0 +1,36 @@
+.catalog__container {
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
+}
+
+.catalog__title {
+  padding: 0 20px;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid $catalog-border-color;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+}
+
+.catalog__item {
+  padding: 20px 20px 24px;
+  border-bottom: 1px solid $catalog-border-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}

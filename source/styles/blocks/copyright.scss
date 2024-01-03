@@ -1,19 +1,24 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: $special-color;
+  color: $base-color-text;
+  fill: $special-color;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 
   &:hover,
   &:focus {
-    color: $base-bg-color;
+    fill: $base-bg-color;
   }
 
   &:active {
     opacity: 0.3;
   }
-}
-
-.copyright__text {
-  color: $base-color-text;
 }

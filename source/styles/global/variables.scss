@@ -1,3 +1,9 @@
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1260px;
+$mobile-width-only: 767px;
+//Страничный паддинг
+$page-padding: 20px;
 //Шрифты
 $primary-font: "Lato", sans-serif;
 $secondary-font: "Oswald", sans-serif;
@@ -9,6 +15,16 @@ $contrast-color-text: #ffffff;
 $base-bg-color: #68b738;
 $second-bg-color: #f2f2f2;
 $third-bg-color: #eaeaea;
-//Иконки футера, слайдер
+$standard-bg-color: #ffffff;
+//меню, футер, слайдер
 $special-color: #666666;
 $special-bg-color: #5eaa2f;
+$nav-border-color: #e6e6e6;
+$catalog-border-color: #ebebeb;
+$extra-border-color: #cdcdcd;
+$footer-border-color: #d9d9d9;
+// inputs
+$input-border-color: #e7e7e7;
+$input-border-color-hover: #cdcdcd;
+$input-border-color-focus: #444444;
+$input-border-color-err: #ff8282;

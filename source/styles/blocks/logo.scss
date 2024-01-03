@@ -4,27 +4,82 @@
   --color-cat-text: #111111;
   fill: currentColor;
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
+  &--header {
+    // 50px (половина текстового лого);
+    width: calc(50% + 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  &:active {
-    opacity: 0.6;
+    @media (min-width: $tablet-width) {
+      color: #444444;
+      width: 174px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 202px;
+    }
+
+    &:hover,
+    &:focus {
+      color: #444444;
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &--footer {
+    display: block;
+    width: fit-content;
+
     &:hover,
     &:focus {
       color: #3e3e3e;
       --color-cat-text: #3e3e3e;
-      opacity: 1;
     }
 
     &:active {
       color: #6b6b6b;
       --color-cat-text: #6b6b6b;
-      opacity: 1;
     }
   }
+}
+
+.logo__image {
+  display: block;
+}
+
+.logo--header .logo__image {
+  &--icon {
+    width: 33px;
+    height: 38px;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 59px;
+    }
+  }
+
+  &--text {
+    width: 101px;
+    height: 18px;
+
+    @media (min-width: $desktop-width) {
+      width: 118px;
+      height: 21px;
+    }
+  }
+}
+
+.logo--footer .logo__image--text {
+  width: 128px;
+  height: 24px;
 }
