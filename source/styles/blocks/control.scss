@@ -1,0 +1,61 @@
+.control {
+  &--check {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 80px;
+    }
+  }
+}
+
+.control__item {
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.control__input {
+  display: grid;
+  place-content: center;
+  appearance: none;
+  margin: 0;
+  border: 1px solid $input-border-color-hover;
+  width: 30px;
+  height: 30px;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    mask-image: url("../../images/icons/stack.svg#icon-tick");
+    mask-repeat: no-repeat;
+    background-color: $base-bg-color;
+  }
+
+  &:checked::before {
+    transform: scale(1);
+  }
+
+  &--radio {
+    border-radius: 50%;
+
+    &::before {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      mask-image: none;
+    }
+  }
+}
+
+.control__label {
+  padding-left: 15px;
+}
