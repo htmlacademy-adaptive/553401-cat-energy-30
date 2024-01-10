@@ -23,7 +23,13 @@
   margin: 0 0 40px;
 }
 
+.example__description {
+  margin: 0 0 20px;
+}
+
 .example__list-wrapper {
+  margin-bottom: 19px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -35,7 +41,12 @@
   }
 }
 
+.example__list {
+  margin-bottom: 20px;
+}
+
 .example__total {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;

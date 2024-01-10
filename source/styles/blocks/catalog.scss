@@ -1,3 +1,7 @@
+.catalog {
+  padding-top: 26px;
+}
+
 .catalog__container {
   @media (max-width: $mobile-width-only) {
     padding: 0;
@@ -5,7 +9,8 @@
 }
 
 .catalog__title {
-  padding: 0 20px;
+  padding: 0 $page-padding;
+  margin-bottom: 38px;
 }
 
 .catalog__list {
@@ -26,7 +31,7 @@
 }
 
 .catalog__item {
-  padding: 20px 20px 24px;
+  padding: 20px $page-padding 24px;
   border-bottom: 1px solid $catalog-border-color;
 
   @media (min-width: $tablet-width) {

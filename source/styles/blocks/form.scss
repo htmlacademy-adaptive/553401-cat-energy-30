@@ -13,6 +13,11 @@
   }
 }
 
+.form__wrapper.container {
+  padding: 0;
+  margin-bottom: 26px;
+}
+
 .form__fieldset {
   border: none;
 
@@ -33,17 +38,39 @@
   }
 
   &--contacts {
+    margin-bottom: 10px;
+
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 80px;
     }
   }
+
+  &--comment {
+    margin-bottom: 21px;
+  }
+
+  &--check {
+    margin-bottom: 19px;
+  }
 }
 
 .form__fieldset:not(.container) {
   padding: 0;
   margin: 0;
+}
+
+.form__wrapper .form__fieldset {
+  &--data {
+    padding: 0 $page-padding 9px;
+  }
+
+  &--radio {
+    padding: 22px $page-padding 5px;
+    border-top: 1px solid $footer-border-color;
+    border-bottom: 1px solid $footer-border-color;
+  }
 }
 
 .form__legend {
@@ -81,7 +108,11 @@
 }
 
 .form__label {
-  padding-right: 13px;
+  padding-right: 15px;
+}
+
+.form__textarea {
+  min-height: 150px;
 }
 
 .form__input-wrapper {
@@ -138,6 +169,7 @@
 
 .form__button {
   width: 100%;
+  margin-bottom: 19px;
 }
 
 .form__explanation {

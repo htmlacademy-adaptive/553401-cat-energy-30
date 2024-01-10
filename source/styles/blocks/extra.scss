@@ -1,8 +1,9 @@
 .extra {
-  padding-bottom: 35px;
+  padding: 25px 0 35px;
 }
 
 .extra__block-title {
+  margin: 0 0 35px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
@@ -19,7 +20,7 @@
 
 .extra__list {
   border-top: 1px solid $extra-border-color;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $extra-border-color;
@@ -55,16 +56,20 @@
 }
 
 .extra__item p {
-  margin: 0;
+  margin: 0 0 15px;
 
   @media (min-width: $tablet-width) {
     text-align: end;
   }
 }
 
+.extra__specs-value {
+  text-align: right;
+}
+
 .extra__title {
   grid-column: 1/-1;
-  margin: 0;
+  margin: 0 0 13px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -88,7 +93,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 40px 60px;
+  padding: 43px 50px;
   min-height: 290px;
   text-align: center;
   background-repeat: no-repeat;
