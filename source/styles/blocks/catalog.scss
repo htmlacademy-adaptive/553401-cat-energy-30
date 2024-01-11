@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 40px 0 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0 45px;
+  }
 }
 
 .catalog__container {
@@ -35,7 +39,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 63px 80px;
   }
 }
 

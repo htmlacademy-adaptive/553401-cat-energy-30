@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0;
+    padding: 95px 0 105px;
   }
 }
 
@@ -25,6 +25,7 @@
   @media (min-width: $desktop-width) {
     width: 565px;
     position: relative;
+    padding: 60px 80px;
     background-color: #ffffff;
     z-index: 2;
   }
@@ -51,6 +52,10 @@
   @media (min-width: $tablet-width) {
     text-align: end;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 

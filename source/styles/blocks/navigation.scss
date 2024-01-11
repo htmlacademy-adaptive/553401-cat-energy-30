@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 16px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -37,6 +38,10 @@
     gap: 10px 26px;
     border-top: none;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 34px;
+  }
 }
 
 .navigation__item {
@@ -60,6 +65,10 @@
     margin: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
   &--current {
     @media (min-width: $tablet-width) {
       text-decoration: underline;
@@ -67,6 +76,10 @@
       text-decoration-color: $base-bg-color;
       text-decoration-thickness: 2px;
       text-underline-offset: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-underline-offset: 12px;
     }
   }
 }

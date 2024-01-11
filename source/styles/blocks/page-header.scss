@@ -34,6 +34,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
+    padding: 55px 0 0;
   }
 }
 
@@ -85,4 +86,10 @@
 
 .page-header__menu--no-js .page-header__toggle {
   display: none;
+}
+
+.page-header__hero {
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }

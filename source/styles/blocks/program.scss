@@ -106,6 +106,10 @@
     margin-bottom: 26px;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
+  }
 }
 
 .program__link {
