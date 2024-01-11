@@ -3,9 +3,18 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -14,8 +23,10 @@
 }
 
 .form__wrapper.container {
-  padding: 0;
-  margin-bottom: 26px;
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+    margin-bottom: 26px;
+  }
 }
 
 .form__fieldset {
@@ -40,6 +51,10 @@
   &--contacts {
     margin-bottom: 10px;
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
+    }
+
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -49,10 +64,18 @@
 
   &--comment {
     margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 59px;
+    }
   }
 
   &--check {
     margin-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 39px;
+    }
   }
 }
 
@@ -63,23 +86,30 @@
 
 .form__wrapper .form__fieldset {
   &--data {
-    padding: 0 $page-padding 9px;
+    @media (max-width: $mobile-width-only) {
+      padding: 0 $page-padding 9px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 52px;
+    }
   }
 
   &--radio {
     padding: 22px $page-padding 5px;
     border-top: 1px solid $footer-border-color;
     border-bottom: 1px solid $footer-border-color;
+
+    @media (min-width: $tablet-width) {
+      padding: 22px 26px 13px;
+      border: 1px solid $footer-border-color;
+    }
   }
 }
 
 .form__legend {
   padding: 0;
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 400;
   text-transform: none;
-  color: $secondary-color-text;
 }
 
 .form__legend br {
@@ -90,14 +120,26 @@
 
 .form__fieldset--contacts legend {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .form__fieldset--comment legend {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
 }
 
 .form__fieldset--check legend {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .form__group-item {
@@ -105,6 +147,10 @@
   grid-template-columns: max-content 1fr;
   align-items: baseline;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__label {
@@ -113,6 +159,10 @@
 
 .form__textarea {
   min-height: 150px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 175px;
+  }
 }
 
 .form__input-wrapper {
@@ -130,6 +180,10 @@
     mask-position: center;
     mask-size: 20px 20px;
     background-color: #000000;
+
+    @media (min-width: $tablet-width) {
+      right: 14px;
+    }
   }
 
   &--email {
@@ -170,6 +224,13 @@
 .form__button {
   width: 100%;
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .form__explanation {
@@ -178,4 +239,8 @@
   line-height: 16px;
   color: $secondary-color-text;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

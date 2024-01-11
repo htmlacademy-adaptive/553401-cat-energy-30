@@ -6,6 +6,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 10px 0 8px;
+    margin-left: 40px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -32,7 +34,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: flex-end;
-    gap: 13px;
+    gap: 10px 26px;
     border-top: none;
   }
 }
@@ -54,7 +56,7 @@
   color: inherit;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 4px;
     margin: 0;
   }
 

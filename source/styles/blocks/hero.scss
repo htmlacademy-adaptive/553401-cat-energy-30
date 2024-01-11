@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+    padding-bottom: 0;
     color: $secondary-color-text;
     text-align: left;
   }
@@ -31,7 +32,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 65px 90px 0;
+    padding: 40px 90px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +48,10 @@
   @media (max-width: $mobile-width-only) {
     line-height: 36px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__span {
@@ -55,6 +60,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -69,7 +75,7 @@
     position: relative;
     z-index: -1;
     order: 1;
-    margin: -50px auto 0;
+    margin: -83px auto 0;
     width: 100%;
     max-width: 709px;
     height: 609px;
@@ -97,7 +103,7 @@
   @media (min-width: $tablet-width) {
     width: 244px;
     margin: 0 0 0 90px;
-    padding: 17px 10px;
+    padding: 14px 10px;
     font-size: 20px;
     line-height: 26px;
   }

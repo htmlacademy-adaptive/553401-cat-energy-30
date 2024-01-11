@@ -1,6 +1,7 @@
 .example-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
 }
 
@@ -16,19 +17,25 @@
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
+    min-width: 162px;
+    padding-bottom: 19px;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .example-list__field {
-  width: 80px;
+  width: 87px;
+  padding: 0 9px;
   margin: -9px auto 0;
   font-size: 12px;
   line-height: 12px;
   background-color: $third-bg-color;
 
   @media (min-width: $tablet-width) {
+    background-color: $standard-bg-color;
+    width: fit-content;
+    max-width: 150px;
     font-size: 14px;
     line-height: 14px;
   }

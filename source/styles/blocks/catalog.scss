@@ -1,5 +1,9 @@
 .catalog {
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 45px;
+  }
 }
 
 .catalog__container {
@@ -11,6 +15,11 @@
 .catalog__title {
   padding: 0 $page-padding;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 84px;
+  }
 }
 
 .catalog__list {

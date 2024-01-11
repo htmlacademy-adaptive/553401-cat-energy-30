@@ -1,0 +1,13 @@
+.section-title {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

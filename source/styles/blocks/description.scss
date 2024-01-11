@@ -28,7 +28,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 208px;
+    gap: 37px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +65,7 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
-      margin-bottom: 31px;
+      margin-bottom: 29px;
     }
   }
 
@@ -74,7 +74,7 @@
       counter-increment: section;
       content: counter(section) "";
       position: absolute;
-      left: 110px;
+      left: 35%;
       top: 0;
       font-family: $secondary-font;
       font-weight: 400;
@@ -113,4 +113,14 @@
 .description__item p {
   margin: 0;
   padding: 2px 0 4px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 80%;
+  }
+}
+
+.description__item br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

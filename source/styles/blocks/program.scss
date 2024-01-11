@@ -1,6 +1,10 @@
 .program {
   padding-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 82px 0 71px;
   }
@@ -44,7 +48,7 @@
 
     @media (min-width: $tablet-width) {
       background-size: 200px 211px;
-      background-position: top 81px right 63px;
+      background-position: top 80px right 63px;
     }
 
     @media (min-width: $desktop-width) {
@@ -60,7 +64,7 @@
 
     @media (min-width: $tablet-width) {
       background-size: 268px 200px;
-      background-position: top 91px right 29px;
+      background-position: top 91px right 33px;
     }
 
     @media (min-width: $desktop-width) {
@@ -81,6 +85,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
@@ -96,6 +101,11 @@
   margin: 0 0 15px;
   padding-bottom: 22px;
   border-bottom: 1px solid $footer-border-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+    border: none;
+  }
 }
 
 .program__link {
@@ -128,6 +138,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-right: 58px;
     font-size: 20px;
     line-height: 30px;
   }
