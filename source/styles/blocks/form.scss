@@ -177,6 +177,13 @@
 
 .form__input {
   flex-grow: 1;
+  // следующий параметр для firefox, плохо отрабатывает flex
+  width: 50%;
+
+  &[type="number"] {
+    // убирает стрелочки в полях ввода чисел
+    appearance: textfield;
+  }
 }
 
 .form__textarea {
