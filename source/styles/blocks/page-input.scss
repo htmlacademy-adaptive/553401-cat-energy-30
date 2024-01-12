@@ -1,5 +1,5 @@
 .page-input {
-  width: 100%;
+  // width: 100%;
   padding: 13px 14px 12px;
   border: 1px solid $input-border-color;
   font-family: $secondary-font;
@@ -28,7 +28,9 @@
     outline: none;
   }
 
-  &:invalid {
+  &--error,
+  &--error:hover,
+  &--error:focus {
     border-color: $input-border-color-err;
     outline: none;
   }

@@ -32,13 +32,13 @@
   border-top: 1px solid $catalog-border-color;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
     gap: 60px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     gap: 63px 80px;
   }
 }

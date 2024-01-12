@@ -63,9 +63,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 175px 70px 244px;
+    grid-template-columns: 1fr 234px 72px 244px;
     padding: 15px 0 16px;
-    gap: 40px;
+    gap: 10px;
     align-items: center;
   }
 }
@@ -76,15 +76,15 @@
   @media (min-width: $desktop-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .extra__specs-field {
   @media (min-width: $tablet-width) {
     text-align: end;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: start;
   }
 }
 
@@ -125,7 +125,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 43px 50px;
+  padding: 135px 50px 43px;
   min-height: 290px;
   text-align: center;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@
 
   @media (min-width: $desktop-width) {
     justify-content: center;
-    padding: 43px 42px;
+    padding: 135px 42px 43px;
     min-height: auto;
     text-align: center;
     background-position: top 56px center, center, right;

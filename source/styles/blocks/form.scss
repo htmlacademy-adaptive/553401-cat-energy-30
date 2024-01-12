@@ -162,8 +162,7 @@
 }
 
 .form__group-item {
-  display: grid;
-  grid-template-columns: max-content 1fr;
+  display: flex;
   align-items: baseline;
   margin-bottom: 14px;
 
@@ -176,7 +175,12 @@
   padding-right: 15px;
 }
 
+.form__input {
+  flex-grow: 1;
+}
+
 .form__textarea {
+  width: 100%;
   min-height: 150px;
 
   @media (min-width: $tablet-width) {
@@ -186,6 +190,9 @@
 
 .form__input-wrapper {
   position: relative;
+  flex-grow: 1;
+  display: flex;
+
 
   &::after {
     content: "";
@@ -229,7 +236,7 @@
     }
   }
 
-  &:has(input:invalid) {
+  &:has(.page-input--error) {
     &::after {
       background-color: $input-border-color-err;
     }

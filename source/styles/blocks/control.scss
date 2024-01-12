@@ -39,6 +39,11 @@
     height: 40px;
   }
 
+  &:hover,
+  &:focus {
+    border-color: $radio-border-color-hover;
+  }
+
   &::before {
     content: "";
     width: 26px;
@@ -74,6 +79,11 @@
       height: 18px;
     }
   }
+}
+
+.control__input:disabled,
+.control__input:disabled + .control__label {
+  opacity: 0.3;
 }
 
 .control__label {

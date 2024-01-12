@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи - Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -14,14 +16,14 @@
     <header class="page-header">
       <div class="page-header__container container">
         <div class="page-header__menu page-header__menu--no-js">
-          <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
+          <a class="page-header__logo logo logo--header" href="index.html" aria-label="Перейти на главную.">
             <picture>
               <source width="70" height="59" type="image/svg+xml" media="(min-width: 1260px)" srcset="images/logo-desktop.svg">
               <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
               <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy».">
             </picture>
             <svg class="logo__image logo__image--text" width="101" height="18" aria-hidden="true" focusable="false">
-              <use href="images/icons/stack.svg#logo-text"></use>
+              <use href="images/stack-logo-text.svg#logo-text"></use>
             </svg>
           </a>
           <button class="page-header__toggle button-toggle" aria-label="Открыть меню" type="button"></button>
@@ -349,7 +351,7 @@
         </div>
         <div class="contacts__map contacts__map--no-js">
           <noscript>
-            <a class="contacts__map-link" href="#">
+            <a class="contacts__map-link" href="#" aria-label="Карта с контактами.">
               <picture>
                 <source width="1440" height="400" type="image/webp" media="(min-width: 1260px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
                 <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
@@ -372,7 +374,7 @@
       <div class="page-footer__container container">
         <a class="page-footer__logo logo logo--footer" href="index.html" aria-label="Перейти на главную страницу.">
           <svg class="logo__image logo__image--text" width="128" height="24" aria-hidden="true" focusable="false">
-            <use href="images/icons/stack.svg#logo-text"></use>
+            <use href="images/stack-logo-text.svg#logo-text"></use>
           </svg>
         </a>
         <ul class="page-footer__social social list-reset">

@@ -69,6 +69,15 @@
     padding: 0;
   }
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--current {
     @media (min-width: $tablet-width) {
       text-decoration: underline;
