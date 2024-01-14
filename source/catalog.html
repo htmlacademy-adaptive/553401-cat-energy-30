@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи - Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -13,15 +15,15 @@
   <body class="body">
     <header class="page-header">
       <div class="page-header__container container">
-        <div class="page-header__menu">
-          <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
+        <div class="page-header__menu page-header__menu--no-js">
+          <a class="page-header__logo logo logo--header" href="index.html" aria-label="Перейти на главную.">
             <picture>
               <source width="70" height="59" type="image/svg+xml" media="(min-width: 1260px)" srcset="images/logo-desktop.svg">
               <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
               <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy».">
             </picture>
             <svg class="logo__image logo__image--text" width="101" height="18" aria-hidden="true" focusable="false">
-              <use href="images/icons/stack.svg#logo-text"></use>
+              <use href="images/stack-logo-text.svg#logo-text"></use>
             </svg>
           </a>
           <button class="page-header__toggle button-toggle" aria-label="Открыть меню" type="button"></button>
@@ -57,7 +59,7 @@
 
                     <source width="169" height="210" type="image/png" media="(min-width: 1260px)" srcset="images/catalog/chicken-500-desktop@1x.png 1x, images/catalog/chicken-500-desktop@2x.png 2x">
                     <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/chicken-500-tablet@1x.png 1x, images/catalog/chicken-500-tablet@2x.png 2x">
-                    <img class="product__img" src="images/catalog/chicken-500-mobile@1x.png" srcset="images/catalog/chicken-500-mobile@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом курицы.">
+                    <img class="product__img" src="images/catalog/chicken-500-mobile@1x.png" srcset="images/catalog/chicken-500-mobile@2x.png 2x" width="140" height="107" loading="lazy" alt="Баночка корма со вкусом курицы.">
                   </picture>
                 </a>
                 <div class="product__content">
@@ -92,7 +94,7 @@
 
                     <source width="169" height="210" type="image/png" media="(min-width: 1260px)" srcset="images/catalog/chicken-1000-desktop@1x.png 1x, images/catalog/chicken-1000-desktop@2x.png 2x">
                     <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/chicken-1000-tablet@1x.png 1x, images/catalog/chicken-1000-tablet@2x.png 2x">
-                    <img class="product__img" src="images/catalog/chicken-1000@1x.png" srcset="images/catalog/chicken-1000@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом курицы.">
+                    <img class="product__img" src="images/catalog/chicken-1000@1x.png" srcset="images/catalog/chicken-1000@2x.png 2x" width="140" height="107" loading="lazy" alt="Баночка корма со вкусом курицы.">
                   </picture>
                 </a>
                 <div class="product__content">
@@ -127,7 +129,7 @@
 
                     <source width="169" height="210" type="image/png" media="(min-width: 1260px)" srcset="images/catalog/fish-500-desktop@1x.png 1x, images/catalog/fish-500-desktop@2x.png 2x">
                     <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/fish-500-tablet@1x.png 1x, images/catalog/fish-500-tablet@2x.png 2x">
-                    <img class="product__img" src="images/catalog/fish-500@1x.png" srcset="images/catalog/fish-500@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом рыбы.">
+                    <img class="product__img" src="images/catalog/fish-500@1x.png" srcset="images/catalog/fish-500@2x.png 2x" width="140" height="107" loading="lazy" alt="Баночка корма со вкусом рыбы.">
                   </picture>
                 </a>
                 <div class="product__content">
@@ -162,7 +164,7 @@
 
                     <source width="169" height="210" type="image/png" media="(min-width: 1260px)" srcset="images/catalog/fish-1000-desktop@1x.png 1x, images/catalog/fish-1000-desktop@2x.png 2x">
                     <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/fish-1000-tablet@1x.png 1x, images/catalog/fish-1000-tablet@2x.png 2x">
-                    <img class="product__img" src="images/catalog/fish-1000@1x.png" srcset="images/catalog/fish-1000@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом рыбы.">
+                    <img class="product__img" src="images/catalog/fish-1000@1x.png" srcset="images/catalog/fish-1000@2x.png 2x" width="140" height="107" loading="lazy" alt="Баночка корма со вкусом рыбы.">
                   </picture>
                 </a>
                 <div class="product__content">
@@ -197,7 +199,7 @@
 
                     <source width="169" height="210" type="image/png" media="(min-width: 1260px)" srcset="images/catalog/buckwheat-500-desktop@1x.png 1x, images/catalog/buckwheat-500-desktop@2x.png 2x">
                     <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/buckwheat-500-tablet@1x.png 1x, images/catalog/buckwheat-500-tablet@2x.png 2x">
-                    <img class="product__img" src="images/catalog/buckwheat-500@1x.png" srcset="images/catalog/buckwheat-500@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом гречки.">
+                    <img class="product__img" src="images/catalog/buckwheat-500@1x.png" srcset="images/catalog/buckwheat-500@2x.png 2x" width="140" height="107" loading="lazy" alt="Баночка корма со вкусом гречки.">
                   </picture>
                 </a>
                 <div class="product__content">
@@ -232,7 +234,7 @@
 
                     <source width="169" height="210" type="image/png" media="(min-width: 1260px)" srcset="images/catalog/buckwheat-1000-desktop@1x.png 1x, images/catalog/buckwheat-1000-desktop@2x.png 2x">
                     <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/buckwheat-1000-tablet@1x.png 1x, images/catalog/buckwheat-1000-tablet@2x.png 2x">
-                    <img class="product__img" src="images/catalog/buckwheat-1000@1x.png" srcset="images/catalog/buckwheat-1000@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом гречки.">
+                    <img class="product__img" src="images/catalog/buckwheat-1000@1x.png" srcset="images/catalog/buckwheat-1000@2x.png 2x" width="140" height="107" loading="lazy" alt="Баночка корма со вкусом гречки.">
                   </picture>
                   </a>
                 <div class="product__content">
@@ -267,7 +269,7 @@
 
                     <source width="169" height="210" type="image/png" media="(min-width: 1260px)" srcset="images/catalog/rice-500-desktop@1x.png 1x, images/catalog/rice-500-desktop@2x.png 2x">
                     <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/rice-500-tablet@1x.png 1x, images/catalog/rice-500-tablet@2x.png 2x">
-                    <img class="product__img" src="images/catalog/rice-500@1x.png" srcset="images/catalog/rice-500@2x.png 2x" width="140" height="107" alt="Баночка корма со вкусом риса.">
+                    <img class="product__img" src="images/catalog/rice-500@1x.png" srcset="images/catalog/rice-500@2x.png 2x" width="140" height="107" loading="lazy" alt="Баночка корма со вкусом риса.">
                   </picture>
                 </a>
                 <div class="product__content">
@@ -304,7 +306,7 @@
       </section>
       <section class="extra line">
         <div class="extra__container container">
-          <h2 class="extra__block-title line__title">Дополнительные товары</h2>
+          <h2 class="extra__block-title line__title section-title">Дополнительные товары</h2>
           <div class="extra__wrapper">
             <ul class="extra__list list-reset">
               <li class="extra__item">
@@ -347,9 +349,9 @@
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
           </div>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map contacts__map--no-js">
           <noscript>
-            <a class="contacts__map-link" href="#">
+            <a class="contacts__map-link" href="#" aria-label="Карта с контактами.">
               <picture>
                 <source width="1440" height="400" type="image/webp" media="(min-width: 1260px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
                 <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
@@ -357,12 +359,12 @@
 
                 <source width="1440" height="400" type="image/png" media="(min-width: 1260px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
                 <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="imagesmap//map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
-                <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с контактами.">
+                <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" loading="lazy" alt="Карта с контактами.">
               </picture>
             </a>
           </noscript>
           <div class="contacts__iframe">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1236a4500cdd847569ce7701ca78236c4ecef88fdbd6a297c03e80fd9e8ad7d7&amp;source=constructor"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1236a4500cdd847569ce7701ca78236c4ecef88fdbd6a297c03e80fd9e8ad7d7&amp;source=constructor" loading="lazy"></iframe>
           </div>
         </div>
       </section>
@@ -372,7 +374,7 @@
       <div class="page-footer__container container">
         <a class="page-footer__logo logo logo--footer" href="index.html" aria-label="Перейти на главную страницу.">
           <svg class="logo__image logo__image--text" width="128" height="24" aria-hidden="true" focusable="false">
-            <use href="images/icons/stack.svg#logo-text"></use>
+            <use href="images/stack-logo-text.svg#logo-text"></use>
           </svg>
         </a>
         <ul class="page-footer__social social list-reset">

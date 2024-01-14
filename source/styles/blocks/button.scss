@@ -11,8 +11,26 @@
   background-color: $base-bg-color;
   border: none;
 
+  &:hover,
+  &:focus {
+    background-color: $special-bg-color;
+  }
+
+  &:active {
+    color: rgba($contrast-color-text, 0.3);
+  }
+
   &--second {
     color: $secondary-color-text;
     background-color: $second-bg-color;
+
+    &:hover,
+    &:focus {
+      background-color: $catalog-border-color;
+    }
+
+    &:active {
+      color: $secondary-color-text;
+    }
   }
 }

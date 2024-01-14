@@ -6,7 +6,7 @@ $mobile-width-only: 767px;
 $page-padding: 20px;
 //Шрифты
 $primary-font: "Lato", sans-serif;
-$secondary-font: "Oswald", sans-serif;
+$secondary-font: "Oswald", "Tahoma", sans-serif;
 //Текст
 $base-color-text: #444444;
 $secondary-color-text: #000000;
@@ -28,3 +28,4 @@ $input-border-color: #e7e7e7;
 $input-border-color-hover: #cdcdcd;
 $input-border-color-focus: #444444;
 $input-border-color-err: #ff8282;
+$radio-border-color-hover: #bababa;

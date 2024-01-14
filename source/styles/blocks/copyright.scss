@@ -10,7 +10,7 @@
   fill: $special-color;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    width: 162px;
   }
 
   &:hover,
@@ -21,4 +21,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.copyright__logo-image {
+  flex-shrink: 0;
 }

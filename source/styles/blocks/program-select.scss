@@ -1,3 +1,31 @@
+.program-select {
+  padding: 26px 0 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 0 80px;
+  }
+}
+
+.program-select__header {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.program-select__title {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+}
+
 .program-select .container {
   @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     padding: 0 70px;
@@ -5,9 +33,20 @@
 }
 
 .program-select__description {
+  margin: 0 20px 0 0;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    max-width: 60%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 380px;
+  }
 }

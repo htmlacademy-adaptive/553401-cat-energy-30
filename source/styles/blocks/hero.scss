@@ -1,10 +1,12 @@
 .hero {
+  padding-bottom: 20px;
   text-align: center;
   font-family: $secondary-font;
   color: $contrast-color-text;
 
   @media (min-width: $tablet-width) {
     display: grid;
+    padding-bottom: 0;
     color: $secondary-color-text;
     text-align: left;
   }
@@ -12,9 +14,9 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: auto 1fr;
     align-items: start;
-    min-height: 602px;
+    min-height: 579px;
     padding-top: 29px;
-    padding-bottom: 54px;
+    padding-bottom: 50px;
   }
 }
 
@@ -23,19 +25,19 @@
     @include adaptive-bg("../../images/promo-bg-mobile", "jpg", linear-gradient(rgba($base-bg-color, 85%), rgba($base-bg-color, 85%)));
 
     margin: 0 (-$page-padding);
-    padding: 27px $page-padding 114px;
+    padding: 27px $page-padding 150px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 65px 90px 0;
+    padding: 40px 90px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 0;
-    width: 500px;
+    padding: 80px 0 54px;
+    width: 467px;
   }
 }
 
@@ -46,6 +48,10 @@
   @media (max-width: $mobile-width-only) {
     line-height: 36px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__span {
@@ -54,13 +60,18 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .hero__image {
-  margin: -100px auto 0;
+  margin: -135px auto 3px;
   width: 280px;
   height: 270px;
 
@@ -68,7 +79,7 @@
     position: relative;
     z-index: -1;
     order: 1;
-    margin: -50px auto 0;
+    margin: -83px auto 0;
     width: 100%;
     max-width: 709px;
     height: 609px;
@@ -96,7 +107,7 @@
   @media (min-width: $tablet-width) {
     width: 244px;
     margin: 0 0 0 90px;
-    padding: 17px 10px;
+    padding: 14px 10px;
     font-size: 20px;
     line-height: 26px;
   }

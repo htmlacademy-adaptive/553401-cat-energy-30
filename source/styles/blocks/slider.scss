@@ -1,5 +1,7 @@
 .slider {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   max-width: 280px;
   height: 256px;
@@ -8,24 +10,6 @@
   @media (min-width: $tablet-width) {
     max-width: 560px;
     height: 512px;
-  }
-}
-
-.slider__image {
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-
-  &--before {
-    left: 0;
-    z-index: 2;
-  }
-
-  &--after {
-    right: 0;
-    z-index: 1;
   }
 }
 
@@ -56,6 +40,7 @@
   background-color: currentColor;
   border: none;
   border-radius: 2px;
+  outline: none;
   z-index: 3;
   cursor: pointer;
 

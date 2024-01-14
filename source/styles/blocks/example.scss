@@ -4,6 +4,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 101px;
+    background-color: transparent;
+    background-image: linear-gradient(to top, $third-bg-color 462px, $standard-bg-color 462px);
   }
 
   @media (min-width: $desktop-width) {
@@ -14,28 +16,66 @@
 .example__container {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 440px 560px;
+    grid-template-columns: 433px 560px;
     justify-content: space-between;
   }
 }
 
 .example__title {
   margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 145px;
+  }
+}
+
+.example__description {
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .example__list-wrapper {
+  margin-bottom: 19px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 99px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    // align-items: start;
+    margin-bottom: 0;
+  }
+}
+
+.example__list {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 367px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
   }
 }
 
 .example__total {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
@@ -44,15 +84,26 @@
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
+    padding-top: 12px;
     text-align: end;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
 .example__total-price {
   @media (min-width: $tablet-width) {
     display: block;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-left: 62px;
   }
 }
 

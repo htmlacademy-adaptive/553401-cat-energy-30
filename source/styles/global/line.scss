@@ -1,9 +1,10 @@
 .line {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .line__title {
   position: relative;
+  display: inline-block;
 
   &::after,
   &::before {
@@ -12,8 +13,12 @@
     background-color: #68b738;
     width: 100vw;
     height: 2px;
-    top: 16px;
+    top: 15px;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
   }
 
   &::after {

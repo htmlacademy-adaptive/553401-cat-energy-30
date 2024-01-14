@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи - Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -13,15 +15,15 @@
   <body class="body">
     <header class="page-header">
       <div class="page-header__container container">
-        <div class="page-header__menu">
-          <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
+        <div class="page-header__menu page-header__menu--no-js">
+          <a class="page-header__logo logo logo--header" href="index.html" aria-label="Перейти на главную.">
             <picture>
               <source width="70" height="59" type="image/svg+xml" media="(min-width: 1260px)" srcset="images/logo-desktop.svg">
               <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
               <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy».">
             </picture>
             <svg class="logo__image logo__image--text" width="101" height="18" aria-hidden="true" focusable="false">
-              <use href="images/icons/stack.svg#logo-text"></use>
+              <use href="images/stack-logo-text.svg#logo-text"></use>
             </svg>
           </a>
           <button class="page-header__toggle button-toggle" aria-label="Открыть меню" type="button"></button>
@@ -46,7 +48,7 @@
       <section class="program-select">
         <header class="program-select__header container">
           <h1 class="program-select__title page-title">Подбор программы</h1>
-          <p class="program-select__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <p class="program-select__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </header>
 
         <form class="program-select__form form line" action="https://echo.htmlacademy.ru/" method="get">
@@ -60,11 +62,11 @@
                 </li>
                 <li class="form__group-item">
                   <label class="form__label" for="weight">Вес (кг):<sup>*</sup></label>
-                  <input class="form__input page-input" id="weight" type="number" name="cat-weight" placeholder="7" required>
+                  <input class="form__input page-input" id="weight" type="number" name="cat-weight" placeholder="7" min="0" required>
                 </li>
                 <li class="form__group-item">
                   <label class="form__label" for="age">Возраст (лет):</label>
-                  <input class="form__input page-input" id="age" type="number" name="cat-age" placeholder="7">
+                  <input class="form__input page-input" id="age" type="number" name="cat-age" placeholder="7" min="0">
                 </li>
               </ul>
             </fieldset>
@@ -89,7 +91,7 @@
           </div>
 
           <fieldset class="form__fieldset form__fieldset--contacts container">
-            <legend class="form__legend line__title">Контактные данные <br>(владельца кота)</legend>
+            <legend class="form__legend line__title section-title">Контактные данные <br>(владельца кота)</legend>
             <div class="form__group-item">
               <label class="form__label" for="email">E-mail:<sup>*</sup></label>
               <span class="form__input-wrapper form__input-wrapper--email">
@@ -105,13 +107,13 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--comment container">
-            <legend class="form__legend line__title">Комментарий</legend>
+            <legend class="form__legend line__title section-title">Комментарий</legend>
             <label class="visually-hidden" for="comment">Расскажите про кота</label>
             <textarea class="form__textarea page-input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--check container">
-            <legend class="form__legend line__title">Дополнительно</legend>
+            <legend class="form__legend line__title section-title">Дополнительно</legend>
             <ul class="control control--check list-reset">
               <li class="control__item">
                 <input class="control__input control__input--check" type="checkbox" id="sugar" name="sugar" checked>
@@ -134,7 +136,7 @@
 
           <div class="form__fieldset form__fieldset--submit container">
             <button class="form__button button" type="submit">Отправить заявку</button>
-            <span class="form__explanation">* &mdash; Обязательные поля</span>
+            <span class="form__explanation">* &ndash; Обязательные поля</span>
           </div>
         </form>
       </section>
@@ -147,9 +149,9 @@
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-span">Санкт-Петербург</span></address>
           </div>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map contacts__map--no-js">
           <noscript>
-            <a class="contacts__map-link" href="#">
+            <a class="contacts__map-link" href="#" aria-label="Карта с контактами.">
               <picture>
                 <source width="1440" height="400" type="image/webp" media="(min-width: 1260px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
                 <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
@@ -157,12 +159,12 @@
 
                 <source width="1440" height="400" type="image/png" media="(min-width: 1260px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
                 <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="imagesmap//map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
-                <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с контактами.">
+                <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" loading="lazy" alt="Карта с контактами.">
               </picture>
             </a>
           </noscript>
           <div class="contacts__iframe">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1236a4500cdd847569ce7701ca78236c4ecef88fdbd6a297c03e80fd9e8ad7d7&amp;source=constructor"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1236a4500cdd847569ce7701ca78236c4ecef88fdbd6a297c03e80fd9e8ad7d7&amp;source=constructor" loading="lazy"></iframe>
           </div>
         </div>
       </section>
@@ -172,7 +174,7 @@
       <div class="page-footer__container container">
         <a class="page-footer__logo logo logo--footer" href="index.html" aria-label="Перейти на главную страницу.">
           <svg class="logo__image logo__image--text" width="128" height="24" aria-hidden="true" focusable="false">
-            <use href="images/icons/stack.svg#logo-text"></use>
+            <use href="images/stack-logo-text.svg#logo-text"></use>
           </svg>
         </a>
         <ul class="page-footer__social social list-reset">
