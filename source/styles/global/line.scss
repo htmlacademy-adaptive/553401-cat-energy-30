@@ -1,10 +1,10 @@
 .line {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .line__title {
   position: relative;
-  width: fit-content;
+  display: inline-block;
 
   &::after,
   &::before {

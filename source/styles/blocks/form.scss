@@ -175,11 +175,13 @@
   padding-right: 15px;
 }
 
-.form__input {
-  flex-grow: 1;
-  // следующий параметр для firefox, плохо отрабатывает flex
-  width: 50%;
+.form__group-item label {
+  // страховка от сильного сжатия для поля ввода
+  max-width: 50%;
+  flex-shrink: 0;
+}
 
+.form__input {
   &[type="number"] {
     // убирает стрелочки в полях ввода чисел
     appearance: textfield;
