@@ -76,17 +76,23 @@
 .product__link {
   display: block;
   width: 80px;
+  margin: 0 0 15px;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
     width: 135px;
+    margin-bottom: 12px;
     align-self: center;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
 .product__title {
-  margin: 0 0 15px;
+  margin: 0;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -95,13 +101,8 @@
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 12px;
     font-size: 20px;
     line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
   }
 }
 
