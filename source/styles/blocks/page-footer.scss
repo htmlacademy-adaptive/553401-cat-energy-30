@@ -28,21 +28,14 @@
 }
 
 .page-footer__social {
-  margin: 0 auto;
+  margin: 0 auto 20px;
   padding: 20px 0 19px;
   border-top: 1px solid $footer-border-color;
   border-bottom: 1px solid $footer-border-color;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     padding: 7px 0 0 35px;
     border: none;
-  }
-}
-
-.page-footer__copyright {
-  padding-top: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
   }
 }
